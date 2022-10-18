@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Stle_menufont">
+        <item name="fontFamily">@font/rebik_regular</item>
+    </style>
+
+
+</resources>

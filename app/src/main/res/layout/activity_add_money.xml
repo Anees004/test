@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ui.customer.AddMoneyActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+    <include
+        android:id="@+id/customerToolbar"
+        layout="@layout/custom_toolbar" />
+
+    <TextView
+        android:id="@+id/txtAvailableBalence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rebik_regular"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="Available Balence $50,0000"/>
+
+    <EditText
+        android:id="@+id/edittxtAddMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$10,000,0.45"
+        android:fontFamily="@font/rubik_medium"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/_22sdp"
+        android:background="@drawable/bcd_boxwhite"
+        android:elevation="@dimen/_4sdp"
+        android:inputType="number"
+        android:padding="@dimen/_24sdp"/>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/bottom_bcd_btnqr"
+        app:elevation="6dp"
+        app:srcCompat="@drawable/icn_btn_nezxt"
+        app:tint="@android:color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Bicol Wallet</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="my_profile">My Profile</string>
+    <string name="request">Requests</string>
+    <string name="send_request">Send Request</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="change_language">Change Language</string>
+    <string name="support">Support</string>
+    <string name="faq">FAQ</string>
+    <string name="about_us">About us</string>
+    <string name="terms">Terms &amp; Use</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Log Out</string>
+
+    <!--    Now for home text-->
+
+    <string name="txtyour_balence">Your \nBalence</string>
+    <string name="recharge_wallet">Recharge Wallet</string>
+    <string name="avail_txt">Available Balance</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

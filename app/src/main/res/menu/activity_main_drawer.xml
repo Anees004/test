@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<!--    android:checkableBehavior="single"-->
+    <group >
+        <item
+            android:id="@+id/btnHomeProfile"
+            android:icon="@drawable/icn_myprofile"
+            android:iconTint="@color/lessblue"
+            android:title="@string/my_profile" />
+        <item
+            android:id="@+id/btnRequests"
+            android:icon="@drawable/icn_req"
+            android:title="@string/request" />
+        <item
+            android:id="@+id/btnSendRequest"
+            android:icon="@drawable/icn_sendmoney"
+            android:title="@string/send_request" />
+
+        <item
+            android:id="@+id/btnChangePin"
+            android:icon="@drawable/icn_eyepassword"
+            android:title="@string/change_pin" />
+
+        <item
+            android:id="@+id/btnChangeLanguage"
+            android:icon="@drawable/icn_language"
+            android:title="@string/change_language" />
+
+        <item
+            android:id="@+id/btnSupport"
+            android:icon="@drawable/icn_support"
+            android:title="@string/support" />
+
+        <item
+            android:id="@+id/btnFaq"
+            android:icon="@drawable/icn_faq"
+            android:title="@string/faq" />
+
+        <item
+            android:id="@+id/btnAbout"
+            android:icon="@drawable/icn_about"
+            android:title="@string/about_us" />
+
+        <item
+            android:id="@+id/btnTerms"
+            android:icon="@drawable/icn_terms"
+            android:title="@string/terms" />
+
+        <item
+            android:id="@+id/btnPrivacy"
+            android:icon="@drawable/icn_privacy"
+            android:title="@string/privacy_policy" />
+
+        <item
+            android:id="@+id/btnLogOut"
+            android:icon="@drawable/icn_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

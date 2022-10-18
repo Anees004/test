@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.customer.CustomerSendMoney">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/customer_toolbar"
+        layout="@layout/custom_toolbar"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bcd_password_box"
+            android:elevation="@dimen/_4sdp"
+            android:orientation="horizontal">
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextPhone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_rememberLastSelection="true"
+        app:ccp_autoFormatNumber="false"
+        app:ccp_hintExampleNumber="true" />
+
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_next"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="2"
+        android:layout_margin="@dimen/_2sdp"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:singleLine="true"
+        android:background="@drawable/bcd_password_box"
+        />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+              </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnPayQr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Scan QR Code"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/rebik_regular"
+        android:textAllCaps="false"
+        android:elevation="@dimen/_3sdp"
+        android:drawableLeft="@drawable/icn_qrgenerate"
+        android:layout_margin="@dimen/_8sdp"
+        android:paddingStart="@dimen/_18sdp"
+        android:paddingEnd="@dimen/_18sdp"
+        android:layout_gravity="bottom|start"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bcd_lightblue_roundconrner"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_blue"
+        android:background="@drawable/bottom_bcd_btnqr"
+        app:elevation="@dimen/_3sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/icn_btn_nezxt"
+        app:tint="@android:color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

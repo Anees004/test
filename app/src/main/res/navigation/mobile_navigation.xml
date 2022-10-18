@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bicolwallet.ui.customer.accept_fragment.AcceptSendFragment"
+        android:label="@string/my_profile"
+        tools:layout="@layout/fragment_accept" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.bicolwallet.ui.customer.pending_send.PendingSendFragment"
+        android:label="@string/request"
+        tools:layout="@layout/fragment_pending" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.bicolwallet.ui.customer.denied_send.DeniedSendFragment"
+        android:label="@string/send_request"
+        tools:layout="@layout/fragment_denied" />
+</navigation>

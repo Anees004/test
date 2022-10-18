@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEFF1"
+    android:orientation="vertical"
+    tools:context=".ui.customer.ChangePinActivity">
+
+    <include
+        android:id="@+id/customer_toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtintr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="Enter Your 4 Digit PIN For\nFuture Login"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_17sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/oldPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bcd_password_box"
+            android:elevation="@dimen/_3sdp"
+            android:hint="Old Password"
+            android:maxLength="4"
+            android:padding="@dimen/_13sdp"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtintr" />
+
+        <ImageView
+            android:id="@+id/btnOldenable"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/icn_eyepassword"
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/oldPassword"
+            app:layout_constraintEnd_toEndOf="@+id/oldPassword"
+            app:layout_constraintTop_toTopOf="@+id/oldPassword" />
+
+        <EditText
+            android:id="@+id/newPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/bcd_password_box"
+            android:elevation="@dimen/_3sdp"
+            android:hint="New Password"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:padding="@dimen/_13sdp"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/oldPassword"
+            app:layout_constraintStart_toStartOf="@+id/oldPassword"
+            app:layout_constraintTop_toBottomOf="@+id/oldPassword" />
+
+        <ImageView
+            android:id="@+id/btnNewenable"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/icn_eyepassword"
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/newPassword"
+            app:layout_constraintEnd_toEndOf="@+id/newPassword"
+            app:layout_constraintTop_toTopOf="@+id/newPassword" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/bcd_password_box"
+            android:elevation="@dimen/_3sdp"
+            android:hint="Confirm Password"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:padding="@dimen/_13sdp"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@+id/newPassword"
+            app:layout_constraintStart_toStartOf="@+id/newPassword"
+            app:layout_constraintTop_toBottomOf="@+id/newPassword" />
+
+        <ImageView
+            android:id="@+id/btnConfirmenable"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/icn_eyepassword"
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/confirmPassword"
+            app:layout_constraintEnd_toEndOf="@+id/confirmPassword"
+            app:layout_constraintTop_toTopOf="@+id/confirmPassword" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_13sdp"
+            android:background="@drawable/bottom_bcd_btnqr"
+            android:src="@drawable/icn_btn_nezxt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

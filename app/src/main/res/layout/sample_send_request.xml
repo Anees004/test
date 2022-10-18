@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Rconstraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_12sdp"
+    android:background="@drawable/bcd_boxwhite"
+    android:elevation="@dimen/_5sdp"
+    android:padding="@dimen/_20sdp">
+
+    <TextView
+        android:id="@+id/txtReceiverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/rubiksemi_bold"
+        android:text="User Demo"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtReceiverPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="+9231234567"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/txtReceiverName"
+        app:layout_constraintTop_toBottomOf="@+id/txtReceiverName" />
+
+    <TextView
+        android:id="@+id/txtamt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Amount- "
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/txtReceiverPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/txtReceiverPhoneNumber" />
+
+    <TextView
+        android:id="@+id/txtRequestAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_medium"
+        android:text="$5000"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtamt"
+        app:layout_constraintStart_toEndOf="@+id/txtamt"
+        app:layout_constraintTop_toTopOf="@+id/txtamt" />
+
+    <TextView
+        android:id="@+id/txtReqTimeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/rubik_light"
+        android:text="11:18 PM | !6-Oct-2022"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintEnd_toEndOf="@+id/txtRequestAmount"
+        app:layout_constraintStart_toStartOf="@+id/txtamt"
+        app:layout_constraintTop_toBottomOf="@+id/txtamt" />
+
+    <TextView
+        android:id="@+id/txtnot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/rubiksemi_bold"
+        android:text="Note - "
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@+id/txtamt"
+        app:layout_constraintTop_toBottomOf="@+id/txtReqTimeDate"
+
+        />
+
+    <TextView
+        android:id="@+id/txtReceiverNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_light"
+        android:text="No Note Available"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtnot"
+        app:layout_constraintStart_toEndOf="@+id/txtnot"
+        app:layout_constraintTop_toTopOf="@+id/txtnot" />
+
+    <TextView
+        android:id="@+id/txtRequestStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:text="Accepted"
+        android:textAllCaps="false"
+        android:textColor="@color/less_black"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtReqTimeDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtRequestAmount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
